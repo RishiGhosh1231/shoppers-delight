@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopper's Delight</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="toggle-nav">
+            <div class="my-row">
+                <div class="toggle-logo">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                <div class="toggle-wish-and-cart">
+                    <img src="img/wishlist-icon.png" alt="wishlist">
+                    <img src="img/cart-icon.png" alt="cart">
+                    <img src="img/search-icon.png" alt="search" id="toggle-search">
+                </div>
+            </div>
+            <div class="toggle-search">
+                <input type="text" placeholder="Search...">
+                <img src="img/search-icon.png" alt="search">
+            </div>
+            <ul>
+                <li class="active">Home</li>
+                <li>About</li>
+                <li>Mens</li>
+                <li>Womens</li>
+                <li>Childrens</li>
+                <li>Electronics</li>
+            </ul>
+        </div>
+        <div class="upper-header">
+            <div class="container">
+                <div class="my-row">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="logo">
+                    </div>
+                    <div class="header-search">
+                        <input type="text" placeholder="Search for items">
+                        <img src="img/search-icon.png" alt="search">
+                    </div>
+                    <div class="wish-and-cart">
+                        <div class="wishlist">
+                            <img src="img/wishlist-icon.png" alt="wishlist">
+                            <h4>Wishlist</h4>
+                        </div>
+                        <div class="cart">
+                            <img src="img/cart-icon.png" alt="cart">
+                            <h4>Cart</h4>
+                        </div>
+                        <div class="toggle-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lower-header">
+            <div class="container">
+                <div class="my-row">
+                    <div class="categories">
+                        <img src="img/category.png" alt="categories-icon">
+                        <h4>Browse All Categories <i class="fa-solid fa-angle-down"></i></h4>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="#" class="active">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Mens <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="nav-dropdown">
+                                <li><a href="#">Shirt</a></li>
+                                <li><a href="#">T-Shirt</a></li>
+                                <li><a href="#">Formals</a></li>
+                                <li><a href="#">Casual</a></li>
+                                <li><a href="#">Traditional</a></li>
+                                <li><a href="#">Bottoms</a></li>
+                            </ul>
+                            </li>
+                            <li><a href="#">Womens <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="nav-dropdown">
+                                    <li><a href="#">Shirt</a></li>
+                                    <li><a href="#">T-Shirt</a></li>
+                                    <li><a href="#">Formals</a></li>
+                                    <li><a href="#">Casual</a></li>
+                                    <li><a href="#">Tops</a></li>
+                                    <li><a href="#">Traditional</a></li>
+                                    <li><a href="#">Bottoms</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Childrens <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="nav-dropdown">
+                                    <li><a href="#">Boys</a></li>
+                                    <li><a href="#">Girls</a></li>
+                                    <li><a href="#">Toys</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="#">Electronics</a></li>
+                        </ul>
+                    </nav>
+                    <div class="support">
+                        <div class="support-icon">
+                            <img src="img/headphone.png" alt="customer-support">
+                        </div>
+                        <div class="support-text">
+                            <h4>1200 - 800</h4>
+                            <h5>24/7 Support Center</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- BANNER -->
+    <div class="banner">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="5000">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/banner-1.png" alt="banner" class="l-banner">
+                <img src="img/banner-mobile.png" alt="s-banner" class="s-banner">
+                <img src="img/banner-small-mobile.png" alt="xs-mobile-banner" class="xs-banner">
+              </div>
+              <div class="carousel-item">
+                <img src="img/banner-2.jpg" alt="banner-2" class="l-banner">
+                <img src="img/mobile-banner-2.jpg" alt="s-banner-2" class="s-banner">
+                <img src="img/small-mobile-banner-2.jpg" alt="xs-mobile-banner-2" class="xs-banner">
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <!-- COLLECTION -->
+    <div class="collection">
+        <div class="container">
+            <div class="my-row">
+                <div class="flow-collection-item">
+                    <h4>SUMMER 2022 COLLECTION</h4>
+                    <h3>FLOW <span>COLLECTION</span></h3>
+                    <button>DISCOVER NOW</button>
+                </div>
+                <div class="flow-collection-item">
+                    <img src="img/flow-collection-1.png" alt="watch" id="watch-1">
+                    <img src="img/flow-collection-2.png" alt="watch" id="watch-2">
+                </div>
+                <div class="new-style-item">
+                    <img src="img/new-style-1.png" alt="suit" id="suit-1">
+                    <img src="img/new-style-2.png" alt="suit" id="suit-2">
+                </div>
+                <div class="new-style-item" id="new-style-2">
+                    <h4>SPRING 2022 COLLECTION</h4>
+                    <h3>NEW STYLE <span>GREAT FEEL</span></h3>
+                    <button>DISCOVER NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NIKE AD -->
+    <div class="nike-ad">
+        <div class="container">
+            <div class="my-row">
+                <div class="nike-item">
+                    <img src="img/shoe-ad-1.png" alt="nike-ad-1">
+                    <button>BUY NOW</button>
+                </div>
+                <div class="nike-item">
+                    <img src="img/shoe-ad-2.png" alt="nike-ad-2">
+                    <button>BUY NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FEATURED PRODUCTS -->
+    <div class="featured-products">
+        <div class="container">
+            <div class="section-heading">
+                <h2>BEST FEATURED PRODUCTS</h2>
+            </div>
+            <div class="featured-nav">
+                <ul>
+                    <li data-id="0" class="active">Featured Product</li>
+                    <li data-id="1">New Products</li>
+                    <li data-id="2">Latest Products</li>
+                </ul>
+            </div>
+            <div class="my-row active">
+                <div class="product-item">
+                    <img alt="wishlist-icon" class="product-wishlist">
+                    <img src="img/product-1.png" alt="product-1" class="product-img">
+                    <h3>Mens Printed Cartoon Tshirt....</h3>
+                    <h4>$20.00</h4>
+                    <div class="buy-product">
+                        <div class="buy-item">
+                            <img src="img/shopping-cart.png" alt="cart">
+                            <a href="#">ADD TO CART</a>
+                        </div>
+                        <div class="buy-item">
+                            <img src="img/shopping-bag.png" alt="bag">
+                            <a href="#">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img alt="wishlist-icon" class="product-wishlist">
+                    <img src="img/product-2.png" alt="product-2" class="product-img">
+                    <h3>Childrens Red Colored Tshirt...</h3>
+                    <h4>$15.34</h4>
+                    <div class="buy-product">
+                        <div class="buy-item">
+                            <img src="img/shopping-cart.png" alt="cart">
+                            <a href="#">ADD TO CART</a>
+                        </div>
+                        <div class="buy-item">
+                            <img src="img/shopping-bag.png" alt="bag">
+                            <a href="#">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img alt="wishlist-icon" class="product-wishlist">
+                    <img src="img/product-3.png" alt="product-3" class="product-img">
+                    <h3>Rayban Clubmaster Sunglass...</h3>
+                    <h4>$22.88</h4>
+                    <div class="buy-product">
+                        <div class="buy-item">
+                            <img src="img/shopping-cart.png" alt="cart">
+                            <a href="#">ADD TO CART</a>
+                        </div>
+                        <div class="buy-item">
+                            <img src="img/shopping-bag.png" alt="bag">
+                            <a href="#">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img alt="wishlist-icon" class="product-wishlist">
+                    <img src="img/product-4.png" alt="product-4" class="product-img">
+                    <h3>Boat Smartwatch With Alexa...</h3>
+                    <h4>$26.19</h4>
+                    <div class="buy-product">
+                        <div class="buy-item">
+                            <img src="img/shopping-cart.png" alt="cart">
+                            <a href="#">ADD TO CART</a>
+                        </div>
+                        <div class="buy-item">
+                            <img src="img/shopping-bag.png" alt="bag">
+                            <a href="#">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img alt="wishlist-icon" class="product-wishlist">
+                    <img src="img/product-5.png" alt="product-5" class="product-img">
+                    <h3>Boat Smartwatch With Alexa...</h3>
+                    <h4>$24.00</h4>
+                    <div class="buy-product">
+                        <div class="buy-item">
+                            <img src="img/shopping-cart.png" alt="cart">
+                            <a href="#">ADD TO CART</a>
+                        </div>
+                        <div class="buy-item">
+                            <img src="img/shopping-bag.png" alt="bag">
+                            <a href="#">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img alt="wishlist-icon" class="product-wishlist">
+                    <img src="img/product-6.png" alt="product-6" class="product-img">
+                    <h3>Boat Smartwatch With Alexa...</h3>
+                    <h4>$21.47</h4>
+                    <div class="buy-product">
+                        <div class="buy-item">
+                            <img src="img/shopping-cart.png" alt="cart">
+                            <a href="#">ADD TO CART</a>
+                        </div>
+                        <div class="buy-item">
+                            <img src="img/shopping-bag.png" alt="bag">
+                            <a href="#">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img alt="wishlist-icon" class="product-wishlist">
+                    <img src="img/product-7.png" alt="product-7" class="product-img">
+                    <h3>Boat Smartwatch With Alexa...</h3>
+                    <h4>$18.05</h4>
+                    <div class="buy-product">
+                        <div class="buy-item">
+                            <img src="img/shopping-cart.png" alt="cart">
+                            <a href="#">ADD TO CART</a>
+                        </div>
+                        <div class="buy-item">
+                            <img src="img/shopping-bag.png" alt="bag">
+                            <a href="#">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img alt="wishlist-icon" class="product-wishlist">
+                    <img src="img/product-8.png" alt="product-8" class="product-img">
+                    <h3>Boat Smartwatch With Alexa...</h3>
+                    <h4>$25.15</h4>
+                    <div class="buy-product">
+                        <div class="buy-item">
+                            <img src="img/shopping-cart.png" alt="cart">
+                            <a href="#">ADD TO CART</a>
+                        </div>
+                        <div class="buy-item">
+                            <img src="img/shopping-bag.png" alt="bag">
+                            <a href="#">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="my-row">
+
+                <div class="product-item">
+                    <img alt="wishlist-icon" class="product-wishlist">
+                    <img src="img/product-5.png" alt="product-5" class="product-img">
+                    <h3>Boat Smartwatch With Alexa...</h3>
+                    <h4>$24.00</h4>
+                    <div class="buy-product">
+                        <div class="buy-item">
+                            <img src="img/shopping-cart.png" alt="cart">
+                            <a href="#">ADD TO CART</a>
+                        </div>
+                        <div class="buy-item">
+                            <img src="img/shopping-bag.png" alt="bag">
+                            <a href="#">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img alt="wishlist-icon" class="product-wishlist">
+                    <img src="img/product-6.png" alt="product-6" class="product-img">
+                    <h3>Boat Smartwatch With Alexa...</h3>
+                    <h4>$21.47</h4>
+                    <div class="buy-product">
+                        <div class="buy-item">
+                            <img src="img/shopping-cart.png" alt="cart">
+                            <a href="#">ADD TO CART</a>
+                        </div>
+                        <div class="buy-item">
+                            <img src="img/shopping-bag.png" alt="bag">
+                            <a href="#">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img alt="wishlist-icon" class="product-wishlist">
+                    <img src="img/product-7.png" alt="product-7" class="product-img">
+                    <h3>Boat Smartwatch With Alexa...</h3>
+                    <h4>$18.05</h4>
+                    <div class="buy-product">
+                        <div class="buy-item">
+                            <img src="img/shopping-cart.png" alt="cart">
+                            <a href="#">ADD TO CART</a>
+                        </div>
+                        <div class="buy-item">
+                            <img src="img/shopping-bag.png" alt="bag">
+                            <a href="#">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img alt="wishlist-icon" class="product-wishlist">
+                    <img src="img/product-8.png" alt="product-8" class="product-img">
+                    <h3>Boat Smartwatch With Alexa...</h3>
+                    <h4>$25.15</h4>
+                    <div class="buy-product">
+                        <div class="buy-item">
+                            <img src="img/shopping-cart.png" alt="cart">
+                            <a href="#">ADD TO CART</a>
+                        </div>
+                        <div class="buy-item">
+                            <img src="img/shopping-bag.png" alt="bag">
+                            <a href="#">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-row">
+                <div class="product-item">
+                    <img alt="wishlist-icon" class="product-wishlist">
+                    <img src="img/product-1.png" alt="product-1" class="product-img">
+                    <h3>Mens Printed Cartoon Tshirt....</h3>
+                    <h4>$20.00</h4>
+                    <div class="buy-product">
+                        <div class="buy-item">
+                            <img src="img/shopping-cart.png" alt="cart">
+                            <a href="#">ADD TO CART</a>
+                        </div>
+                        <div class="buy-item">
+                            <img src="img/shopping-bag.png" alt="bag">
+                            <a href="#">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img alt="wishlist-icon" class="product-wishlist">
+                    <img src="img/product-2.png" alt="product-2" class="product-img">
+                    <h3>Childrens Red Colored Tshirt...</h3>
+                    <h4>$15.34</h4>
+                    <div class="buy-product">
+                        <div class="buy-item">
+                            <img src="img/shopping-cart.png" alt="cart">
+                            <a href="#">ADD TO CART</a>
+                        </div>
+                        <div class="buy-item">
+                            <img src="img/shopping-bag.png" alt="bag">
+                            <a href="#">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img alt="wishlist-icon" class="product-wishlist">
+                    <img src="img/product-3.png" alt="product-3" class="product-img">
+                    <h3>Rayban Clubmaster Sunglass...</h3>
+                    <h4>$22.88</h4>
+                    <div class="buy-product">
+                        <div class="buy-item">
+                            <img src="img/shopping-cart.png" alt="cart">
+                            <a href="#">ADD TO CART</a>
+                        </div>
+                        <div class="buy-item">
+                            <img src="img/shopping-bag.png" alt="bag">
+                            <a href="#">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img alt="wishlist-icon" class="product-wishlist">
+                    <img src="img/product-4.png" alt="product-4" class="product-img">
+                    <h3>Boat Smartwatch With Alexa...</h3>
+                    <h4>$26.19</h4>
+                    <div class="buy-product">
+                        <div class="buy-item">
+                            <img src="img/shopping-cart.png" alt="cart">
+                            <a href="#">ADD TO CART</a>
+                        </div>
+                        <div class="buy-item">
+                            <img src="img/shopping-bag.png" alt="bag">
+                            <a href="#">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- STYLE INSPIRATION BANNER -->
+    <div class="style-insp">
+        <img src="img/style-inspiration-img.png" alt="style-inspiration-img" id="style-insp-img">
+        <img src="img/style-inspiration-small-mobile.png" alt="style-inspiration-small-mobile" id="style-insp-s-mobile">
+        <div class="container">
+            <div class="style-text">
+                <h3>Style Inspiration</h3>
+                <h4>Latest Party Wear Collection</h4>
+                <a href="#">SHOP NOW</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- BRAND LOGOS -->
+    <div class="brands">
+        <div class="container">
+            <div class="my-row">
+                <div class="brand">
+                    <img src="img/brand-1.png" alt="Louis Vuitton">
+                </div>
+                <div class="brand">
+                    <img src="img/brand-2.png" alt="Gucci">
+                </div>
+                <div class="brand">
+                    <img src="img/brand-3.png" alt="Chanel">
+                </div>
+                <div class="brand">
+                    <img src="img/brand-4.png" alt="Ralph Lauren">
+                </div>
+                <div class="brand">
+                    <img src="img/brand-5.png" alt="Varsace">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GALLERY -->
+    <div class="gallery">
+        <div class="container">
+            <div class="my-row">
+                <div class="gallery-item">
+                    <img src="img/gallery-1.png" alt="Exclusive Sale">
+                    <img src="img/gallery-2.png" alt="smartwatch">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/gallery-3.png" alt="Mens Winter Collection">
+                    <div class="sub-gallery">
+                        <div class="sub-gallery-item">
+                            <img src="img/gallery-4.png" alt="sunglass">
+                        </div>
+                        <div class="sub-gallery-item">
+                            <img src="img/gallery-5.png" alt="classy collection">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- OFFERS -->
+    <div class="offers">
+        <div class="my-row">
+            <div class="offer-item">
+                <div class="sub-offer-item">
+                    <img src="img/offer-1.png" alt="Mid Season Sale">
+                    <div class="offer-text">
+                        <h4>
+                            SALES UPTO 25% OFF
+                        </h4>
+                        <h3>
+                            Mid Season Sale
+                        </h3>
+                        <button>SHOP NOW</button>
+                    </div>
+                </div>
+                <div class="sub-offer-item">
+                    <img src="img/offer-2.png" alt="Autumn Fashion">
+                    <div class="offer-text">
+                        <h4>
+                            NEW ARRIVAL FALL 2022
+                        </h4>
+                        <h3>
+                            Autumn Fashion
+                        </h3>
+                        <button>SHOP NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="offer-item">
+                <img src="img/offer-3.png" alt="Clothing Trend">
+                <div class="offer-text">
+                    <h4>SALE OFFER 40% OFF THIS WEEK</h4>
+                    <h3>Clothing Trend 2022</h3>
+                    <div class="countdown-box">
+                        <div class="countdown">
+                            <p class="count" id="days"></p>
+                            <p class="count-type">DAYS</p>
+                        </div>
+                        <div class="countdown">
+                            <p class="count" id="hours"></p>
+                            <p class="count-type">HOURS</p>
+                        </div>
+                        <div class="countdown">
+                            <p class="count" id="mins"></p>
+                            <p class="count-type">MINS</p>
+                        </div>
+                        <div class="countdown">
+                            <p class="count" id="secs"></p>
+                            <p class="count-type">SECS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DEALS OF THE DAY -->
+    <div class="dotd">
+        <div class="container">
+            <div class="section-heading">
+                <h2>DEALS OF THE DAY</h2>
+            </div>
+            <!-- <div class="my-row">
+
+            </div> -->
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="false" data-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="deal-otd-item" data-id="0">
+                        <img alt="wishlist-icon" class="product-wishlist">
+                        <img src="img/dotd-1.png" alt="suit" class="dotd-img">
+                        <h5>Van Huesen</h5>
+                        <h3>Men’s Poly Viscose Notch Lapel Suit</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <h4 class="old-price">$305.14</h4>
+                        <h4 class="deal-price">$200.00</h4>
+                        <div class="buy-product">
+                            <div class="buy-item">
+                                <img src="img/shopping-cart.png" alt="cart">
+                                <a href="#">ADD TO CART</a>
+                            </div>
+                            <div class="buy-item">
+                                <img src="img/shopping-bag.png" alt="bag">
+                                <a href="#">BUY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deal-otd-item" data-id="1">
+                        <img alt="wishlist-icon" class="product-wishlist">
+                        <img src="img/dotd-2.png" alt="watch" class="dotd-img">
+                        <h5>Emporio Armani</h5>
+                        <h3>Sigma Analog Black Dial Men’s Watch</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star grey"></i>
+                        <h4 class="old-price">$350.26</h4>
+                        <h4 class="deal-price">$310.00</h4>
+                        <div class="buy-product">
+                            <div class="buy-item">
+                                <img src="img/shopping-cart.png" alt="cart">
+                                <a href="#">ADD TO CART</a>
+                            </div>
+                            <div class="buy-item">
+                                <img src="img/shopping-bag.png" alt="bag">
+                                <a href="#">BUY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deal-otd-item" data-id="2">
+                        <img alt="wishlist-icon" class="product-wishlist">
+                        <img src="img/dotd-3.png" alt="belt" class="dotd-img">
+                        <h5>Gucci</h5>
+                        <h3>40mm Gg Buckle Smooth Leather Belt</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star grey"></i>
+                        <h4 class="old-price">$300.00</h4>
+                        <h4 class="deal-price">$270.20</h4>
+                        <div class="buy-product">
+                            <div class="buy-item">
+                                <img src="img/shopping-cart.png" alt="cart">
+                                <a href="#">ADD TO CART</a>
+                            </div>
+                            <div class="buy-item">
+                                <img src="img/shopping-bag.png" alt="bag">
+                                <a href="#">BUY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="deal-otd-item" data-id="0">
+                        <img alt="wishlist-icon" class="product-wishlist">
+                        <img src="img/dotd-1.png" alt="suit" class="dotd-img">
+                        <h5>Van Huesen</h5>
+                        <h3>Men’s Poly Viscose Notch Lapel Suit</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <h4 class="old-price">$305.14</h4>
+                        <h4 class="deal-price">$200.00</h4>
+                        <div class="buy-product">
+                            <div class="buy-item">
+                                <img src="img/shopping-cart.png" alt="cart">
+                                <a href="#">ADD TO CART</a>
+                            </div>
+                            <div class="buy-item">
+                                <img src="img/shopping-bag.png" alt="bag">
+                                <a href="#">BUY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deal-otd-item" data-id="1">
+                        <img alt="wishlist-icon" class="product-wishlist">
+                        <img src="img/dotd-2.png" alt="watch" class="dotd-img">
+                        <h5>Emporio Armani</h5>
+                        <h3>Sigma Analog Black Dial Men’s Watch</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star grey"></i>
+                        <h4 class="old-price">$350.26</h4>
+                        <h4 class="deal-price">$310.00</h4>
+                        <div class="buy-product">
+                            <div class="buy-item">
+                                <img src="img/shopping-cart.png" alt="cart">
+                                <a href="#">ADD TO CART</a>
+                            </div>
+                            <div class="buy-item">
+                                <img src="img/shopping-bag.png" alt="bag">
+                                <a href="#">BUY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deal-otd-item" data-id="2">
+                        <img alt="wishlist-icon" class="product-wishlist">
+                        <img src="img/dotd-3.png" alt="belt" class="dotd-img">
+                        <h5>Gucci</h5>
+                        <h3>40mm Gg Buckle Smooth Leather Belt</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star grey"></i>
+                        <h4 class="old-price">$300.00</h4>
+                        <h4 class="deal-price">$270.20</h4>
+                        <div class="buy-product">
+                            <div class="buy-item">
+                                <img src="img/shopping-cart.png" alt="cart">
+                                <a href="#">ADD TO CART</a>
+                            </div>
+                            <div class="buy-item">
+                                <img src="img/shopping-bag.png" alt="bag">
+                                <a href="#">BUY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="deal-otd-item" data-id="0">
+                        <img alt="wishlist-icon" class="product-wishlist">
+                        <img src="img/dotd-1.png" alt="suit" class="dotd-img">
+                        <h5>Van Huesen</h5>
+                        <h3>Men’s Poly Viscose Notch Lapel Suit</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <h4 class="old-price">$305.14</h4>
+                        <h4 class="deal-price">$200.00</h4>
+                        <div class="buy-product">
+                            <div class="buy-item">
+                                <img src="img/shopping-cart.png" alt="cart">
+                                <a href="#">ADD TO CART</a>
+                            </div>
+                            <div class="buy-item">
+                                <img src="img/shopping-bag.png" alt="bag">
+                                <a href="#">BUY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deal-otd-item" data-id="1">
+                        <img alt="wishlist-icon" class="product-wishlist">
+                        <img src="img/dotd-2.png" alt="watch" class="dotd-img">
+                        <h5>Emporio Armani</h5>
+                        <h3>Sigma Analog Black Dial Men’s Watch</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star grey"></i>
+                        <h4 class="old-price">$350.26</h4>
+                        <h4 class="deal-price">$310.00</h4>
+                        <div class="buy-product">
+                            <div class="buy-item">
+                                <img src="img/shopping-cart.png" alt="cart">
+                                <a href="#">ADD TO CART</a>
+                            </div>
+                            <div class="buy-item">
+                                <img src="img/shopping-bag.png" alt="bag">
+                                <a href="#">BUY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deal-otd-item" data-id="2">
+                        <img alt="wishlist-icon" class="product-wishlist">
+                        <img src="img/dotd-3.png" alt="belt" class="dotd-img">
+                        <h5>Gucci</h5>
+                        <h3>40mm Gg Buckle Smooth Leather Belt</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star grey"></i>
+                        <h4 class="old-price">$300.00</h4>
+                        <h4 class="deal-price">$270.20</h4>
+                        <div class="buy-product">
+                            <div class="buy-item">
+                                <img src="img/shopping-cart.png" alt="cart">
+                                <a href="#">ADD TO CART</a>
+                            </div>
+                            <div class="buy-item">
+                                <img src="img/shopping-bag.png" alt="bag">
+                                <a href="#">BUY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+        <div class="control-btn">
+            <img src="img/previous-btn.png" id="left-arrow" alt="left-arrow">
+            <img src="img/next-btn.png" id="right-arrow" alt="next-arrow">
+        </div>
+    </div>
+</div>
+
+    <!-- IPHONE AD -->
+    <div class="iphone">
+        <div class="container">
+            <div class="iphone-ad">
+                <h3>LAUNCHING IN</h3>
+                <div class="ad-timer">
+                    <div class="hrs">
+                        <span class="time">0</span>
+                        <span class="time">2</span>
+                        <p>DAYS</p>
+                    </div>
+                    <div class="mins">
+                        <span class="time">1</span>
+                        <span class="time">5</span>
+                        <p>HOURS</p>
+                    </div>
+                    <div class="secs">
+                        <span class="time">2</span>
+                        <span class="time">7</span>
+                        <p>MINUTES</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="my-row">
+                <div class="footer-item">
+                    <img src="img/logo.png" alt="logo" id="footer-logo">
+                    <p>2022 @ All rights reserved. Designed by Rishi Ghosh</p>
+                    <img src="img/payment-1.png" alt="VISA CARD" class="payment-mode">
+                    <img src="img/payment-2.png" alt="MAESTRO CARD" class="payment-mode">
+                    <img src="img/payment-3.png" alt="AMERICAN EXPRESS" class="payment-mode">
+                    <img src="img/payment-4.png" alt="RUPAY CARD" class="payment-mode">
+                </div>
+                <div class="footer-item">
+                    <h3>ACCOUNT</h3>
+                    <p>Category</p>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                    <p>FAQs</p>
+                    <p>Products</p>
+                </div>
+                <div class="footer-item">
+                    <h3>PRODUCT</h3>
+                    <p>Search</p>
+                    <p>Product</p>
+                    <p>Orders</p>
+                    <p>Wishlist</p>
+                    <p>FAQs</p>
+                </div>
+                <div class="footer-item">
+                    <h3>COMPANY</h3> 
+                    <p>Specials</p>
+                    <p>New Products</p>
+                    <p>Best Sellers</p>
+                    <p>Our Store</p>
+                    <p>Blog</p>
+                </div>
+                <div class="footer-item">
+                    <h3>INFORMATION</h3> 
+                    <p>FAQs</p>
+                    <p>Compare</p>
+                    <p>Wishlist</p>
+                    <p>Privacy Policy</p>
+                    <p>Delivery Infomation</p>
+                </div>
+                <div class="footer-item">
+                    <h3>NEWSLETTER</h3>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <div class="subscribe">
+                        <input type="text" placeholder="Your Email">
+                        <div class="go">
+                            <h4>GO</h4>
+                        </div>
+                    </div>
+                    <img src="img/facebook.png" alt="facebook">
+                    <img src="img/twiiter.png" alt="twiiter">
+                    <img src="img/insta.png" alt="instagram">
+                    <img src="img/youtube.png" alt="youtube">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

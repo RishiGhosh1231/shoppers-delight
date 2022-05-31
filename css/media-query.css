@@ -1,0 +1,924 @@
+@media (min-width: 1450px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    footer .container, .container-lg, .container-md, .container-sm, .container-xl{
+        max-width: 1350px;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width:1449px){
+    .offer-text{
+        top: 95px;
+        right:  50px;
+    }
+    .offer-text h4{
+        font-size: 20px;
+    }
+    .offer-text h3{
+        font-size: 35px;
+    }
+    .offer-text button {
+        padding: 8px 22px 5px;
+        font-size: 14px;
+    }
+    .offer-item:last-child .offer-text{
+        top: 190px;
+    }
+    .offer-item:last-child .offer-text h4{
+        font-size: 25px;
+    }
+    .offer-item:last-child .offer-text h3{
+        font-size: 55px;
+    }
+    .countdown-box {
+        width: 72%;
+    }
+    .countdown{
+        width: 75px;
+        height: 75px;
+    }
+    .count {
+        font-size: 25px;
+        line-height: 16px;
+    }
+    .count-type{
+        font-size: 17px;
+        margin-top: 4px;
+    }
+    .iphone {
+        padding-top: 36px;
+        padding-bottom: 18px;
+    }
+    .iphone-ad{
+        margin-top: 190px;
+    }
+    .style-text {
+        width: 54%;
+        padding-top: 75px;
+    }
+    .style-text h3{
+        font-size: 65px;
+    }
+    .style-text h4{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width:1199px){
+    .wishlist{
+        flex: 0 0 53%;
+        max-width: 53%;
+    }
+    .wishlist h4{
+        font-size: 14px;
+        margin-left: 2px;
+    }
+    .wishlist img{
+        width: 14px;
+    }
+    .cart{
+        flex: 0 0 35%;
+        max-width: 35%;
+    }
+    .cart img{
+        width: 15px;
+    }
+    .cart h4{
+        font-size: 16px;
+        margin-left: 0;
+    }
+    .header-search input{
+        font-size: 14px;
+    }
+    .categories {
+        flex: 0 0 25%;
+        max-width: 25%;
+        padding: 18px 14px;
+    }
+    .categories h4 {
+        margin-left: 4px;
+    }
+    nav ul {
+        padding-top: 16px;
+    }
+    .lower-header nav {
+        flex: 0 0 54%;
+        max-width: 54%;
+    }
+    nav ul li{
+        margin-right: 24px;
+    }
+    .support-text h4 {
+        font-size: 17px;
+        margin-bottom: 4px;
+    }
+    .support-text h5{
+        font-size: 13px;
+    }
+    .support-icon{
+        padding-top: 13px;
+    }
+    .support-text{
+        padding-top: 7px;
+    }
+    .flow-collection-item:nth-child(2) #watch-2 {
+        bottom: -95px;
+        left: -40px;
+    }
+    #new-style-2 {
+        flex: 0 0 48%;
+        max-width: 48%;
+    }
+    .section-heading h2{
+        font-size: 30px;
+    }
+    .featured-nav ul li {
+        padding: 8px 11px;
+        font-size: 15px;
+    }
+    .product-item h3{
+        font-size: 15px;
+    }
+    .product-item h4{
+        font-size: 17px;
+    }
+    .buy-item:first-child {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 2px;
+        padding-bottom: 7px;
+        border-bottom: 2px solid #dfdfdf;
+    }
+    .buy-item:last-child {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+    .style-text {
+        width: 50%;
+        padding-top: 38px;
+    }
+    .style-text h3 {
+        font-size: 66px;
+    }
+    .brand {
+        flex: 0 0 15%;
+        max-width: 15%;
+    }
+    .iphone {
+        padding-top: 1px;
+        padding-bottom: 26px;
+        background-size: 100% 100%;
+    }
+    .iphone-ad {
+        margin-top: 207px;
+    }
+    .iphone-ad h3 {
+        font-size: 24px;
+    }
+    .ad-timer{
+        width: 95%;
+    }
+    .footer-item:nth-child(2){
+        flex: 0 0 11%;
+        max-width: 11%;
+        text-align: center;
+    }
+    .footer-item:nth-child(3){
+        flex: 0 0 11%;
+        max-width: 11%;
+        text-align: center;
+    } 
+    .footer-item:nth-child(4){
+        flex: 0 0 12%;
+        max-width: 12%;
+        text-align: center;
+    }
+    .footer-item:nth-child(5){
+        flex: 0 0 15%;
+        max-width: 15%;
+        text-align: center;
+    }
+    .footer-item:first-child{
+        flex: 0 0 25%;
+        max-width: 25%;
+        text-align: center;
+    }
+    .footer-item:last-child{
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .subscribe {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .footer-item:last-child img {
+        margin-right: 35px;
+        width: 45px;
+    }
+}
+@media only screen and (max-width:1024px){
+    .countdown-box {
+        width: 90%;
+    }
+    .offer-item:last-child .offer-text {
+        top: 73px;
+        right: 37px;
+    }
+    .offer-text {
+        top: 57px;
+        right: 19px;
+    }
+    .offer-text h4{
+        font-size: 18px;
+    }
+    .offer-text h3{
+        font-size: 28px;
+    }
+}
+@media only screen and (max-width:991px){
+    .lower-header{
+        display: none;
+    }
+    .wishlist, .cart{
+        display: none;
+    }
+    .toggle-btn{
+        display: block;
+    }
+    .wish-and-cart{
+        flex: 0 0 8%;
+        max-width: 8%;
+    }
+    .header-search{
+        flex: 0 0 53%;
+        max-width: 53%;
+    }
+    .logo{
+        flex: 0 0 28%;
+        max-width: 28%;
+    }
+    .flow-collection-item h4{
+        font-size: 18px;
+    }
+    .flow-collection-item h3{
+        font-size: 54px;
+    }
+    #new-style-2 h3 {
+        font-size: 50px;
+    }
+    #new-style-2 h4{
+        font-size: 17px;
+    }
+    #new-style-2,.flow-collection-item:first-child{
+        padding-top: 12px;
+    }
+    .nike-item button {
+        top: 106px;
+        left: 17px;
+        padding: 7px 23px;
+        font-size: 13px;
+    }
+    .featured-nav{
+        width: 70%;
+    }
+    .product-item{
+        flex: 0 0 47%;
+        max-width: 47%;
+    }
+    .style-insp{
+        min-height: 0px;
+        padding-top: 10px;
+        padding-bottom: 60px;
+    }
+    .style-text h3 {
+        font-size: 59px;
+    }
+    .style-text h4 {
+        font-size: 26px;
+        margin-top: 15px;
+    }
+    .style-text a {
+        padding: 7px 20px 4px;
+        font-size: 14px;
+    }
+    .brand {
+        flex: 0 0 45%;
+        max-width: 45%;
+        text-align: center;
+    }
+    .brand:last-child{
+        margin: 0 auto;
+    }
+    .deal-otd-item{
+        flex: 0 0 46%;
+        max-width: 46%;
+    }
+    .deal-otd-item:last-child{
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .iphone-ad {
+        margin-top: 175px;
+        width: 52%;
+    }
+    .iphone-ad h3 {
+        font-size: 20px;
+    }
+    .ad-timer {
+        width: 100%;
+    }
+    .time {
+        width: 54px;
+        height: 62px;
+        font-size: 42px;
+        line-height: 69px;
+        margin-right: 0px;
+    }
+    .footer-item:nth-child(2){
+        flex: 0 0 31.33%;
+        max-width: 31.33%;
+        text-align: center;
+    }
+    .footer-item:nth-child(3){
+        flex: 0 0 31.33%;
+        max-width: 31.33%;
+        text-align: center;
+    } 
+    .footer-item:nth-child(4){
+        flex: 0 0 31.33%;
+        max-width: 31.33%;
+        text-align: center;
+    }
+    .footer-item:nth-child(5){
+        flex: 0 0 31.33%;
+        max-width: 31.33%;
+        text-align: center;
+    }
+    .footer-item:first-child{
+        flex: 0 0 31.33%;
+        max-width: 31.33%;
+        text-align: center;
+        margin-bottom: 130px;
+    }
+    .footer-item:last-child{
+        flex: 0 0 31.33%;
+        max-width: 31.33%;
+        text-align: center;
+        margin-top: 0;
+    }
+    #footer-logo {
+        width: 100%;
+        margin-top: 2px;
+    }
+    .footer-item:last-child img {
+        margin-right: 3px;
+        width: 34px;
+    }
+    .subscribe {
+        width: 90%;
+    }
+}
+@media only screen and (max-width:767px){
+    .header-search{
+        display: none;
+    }
+    .logo{
+        flex: 0 0 42%;
+        max-width: 42%;
+    }
+    .toggle-btn{
+        padding-top: 1px;
+    }
+    .flow-collection-item:first-child, .flow-collection-item:nth-child(2){
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .flow-collection-item h4 {
+        font-size: 21px;
+    }
+    .flow-collection-item h3 {
+        font-size: 60px;
+    }
+    #new-style-2 h4{
+        font-size: 21px;
+    }
+    #new-style-2 h3{
+        font-size: 60px;
+    }
+    .flow-collection-item:nth-child(2) #watch-1{
+        float: none;
+        width: 70%;
+    }
+    .flow-collection-item:nth-child(2) #watch-2{
+        display: none;
+    }
+    .new-style-item{
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+        margin-top: 100px;
+    }
+    .new-style-item #suit-2{
+        display: none;
+    }
+    .new-style-item #suit-1 {
+        width: 70%;
+    }
+    #new-style-2{
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .nike-ad{
+        margin-top: 10px;
+    }
+    .nike-item{
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .nike-item button {
+        top: 163px;
+        left: 25px;
+        padding: 10px 37px;
+        font-size: 14px;
+    }
+    .featured-nav {
+        width: 100%;
+    }
+    .section-heading h2 {
+        font-size: 27px;
+    }
+    .style-text {
+        width: 47%;
+        padding-top: 33px;
+    }
+    .style-text h3 {
+        font-size: 41px;
+    }
+    .style-text h4 {
+        font-size: 19px;
+    }
+    .style-text a {
+        padding: 6px 18px 3px;
+        font-size: 13px;
+    }
+    .brand {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .brand img{
+        width: 30%;
+    }
+    .gallery-item:first-child img{
+        margin-bottom: 15px;
+    }
+    .sub-gallery{
+        margin-top: 14px;
+    }
+    .offer-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .offer-text h4 {
+        font-size: 21px;
+    }
+    .offer-text h3 {
+        font-size: 40px;
+    }
+    .offer-text {
+        top: 106px;
+        right: 25px;
+    }
+    .offer-item:last-child .offer-text {
+        top: 110px;
+        right: 0;
+        width: 100%;
+    }
+    .offer-item:last-child .offer-text h4 {
+        font-size: 21px;
+    }
+    .offer-item:last-child .offer-text h3 {
+        font-size: 48px;
+        font-weight: 700;
+    }
+    .countdown-box {
+        width: 52%;
+        margin-top: 36px;
+    }
+    .offer-item:last-child{
+        height: 450px;
+    }
+    .iphone{
+        display: none;
+    }
+    .footer-item:first-child,.footer-item:nth-child(2),.footer-item:nth-child(3),.footer-item:nth-child(4),.footer-item:nth-child(5),.footer-item:last-child{
+        flex: 0 0 45%;
+        max-width: 45%;
+        margin-bottom: 80px;
+    }
+    .footer-item:last-child img {
+        margin-right: 10px;
+        width: 39px;
+    }
+}
+@media only screen and (max-width:576px){
+    .toggle-wish-and-cart img {
+        margin-right: 6px;
+        width: 18px;
+    }
+    .toggle-search {
+        margin-top: 30px;
+    }
+    .toggle-nav ul li {
+        font-size: 18px;
+        margin-top: 29px;
+        padding: 6px 10px;
+        line-height: 35px;
+    }
+    .style-text {
+        width: 47%;
+        padding-top: 40px;
+    }
+    .style-text h3 {
+        font-size: 30px;
+    }
+    .style-text a {
+        font-size: 12px;
+    }
+    .offer-text {
+        top: 70px;
+        right: 25px;
+    }
+    .offer-text h4 {
+        font-size: 18px;
+    }
+    .offer-text h3 {
+        font-size: 31px;
+    }
+    .offer-text button{
+        font-size: 12px;
+    }
+    .offer-item:last-child .offer-text {
+        top: 120px;
+    }
+    .offer-item:last-child .offer-text h4 {
+        font-size: 19px;
+    }
+    .offer-item:last-child .offer-text h3 {
+        font-size: 42px;
+    }
+    .countdown-box{
+        width: 75%;
+    }
+    .count-type {
+        font-size: 16px;
+    }
+    .count{
+        font-size: 22px;
+    }
+    .footer-item:first-child,.footer-item:nth-child(2),.footer-item:nth-child(3),.footer-item:nth-child(4),.footer-item:nth-child(5),.footer-item:last-child{
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+    #footer-logo{
+        width: 50%;
+    }
+    .subscribe {
+        width: 70%;
+    }
+}
+@media only screen and (max-width:480px){
+    .toggle-logo{
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
+    .toggle-wish-and-cart {
+        flex: 0 0 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 35px 20px 0;
+    }
+    .toggle-wish-and-cart img {
+        margin-right: 23px;
+        width: 25px;
+    }
+    .flow-collection-item h4 {
+        font-size: 19px;
+    }
+    .flow-collection-item h3 {
+        font-size: 50px;
+    }
+    #new-style-2 h4{
+        font-size: 19px;
+    }
+    #new-style-2 h3{
+        font-size: 50px;
+    }
+    .nike-item button {
+        top: 141px;
+        padding: 8px 28px;
+        font-size: 13px;
+    }
+    .featured-products{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .featured-nav ul li{
+        flex: 0 0 52%;
+        max-width: 52%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .product-item{
+        flex: 0 0 70%;
+        max-width: 70%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    .featured-products .my-row {
+        margin-top: 30px;
+    }
+    .style-text{
+        display: none;
+    }
+    #style-insp-img{
+        display: block;
+    }
+    .style-insp{
+        background: none;
+        padding: 0;
+        margin-bottom: 25px;
+    }
+    .brand img {
+        width: 40%;
+    }
+    .gallery-item:first-child,.gallery-item:last-child{
+        flex: 0 0 90%;
+        max-width: 90%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .gallery-item:first-child img {
+        margin-bottom: 35px;
+    }
+    .sub-gallery {
+        margin-top: 34px;
+    }
+    .offer-text {
+        top: 56px;
+        right: 18px;
+    }
+    .offer-text h4 {
+        font-size: 16px;
+    }
+    .offer-text h3 {
+        font-size: 26px;
+    }
+    .offer-text button {
+        font-size: 12px;
+        padding: 7px 16px 4px;
+    }
+    .offer-item:last-child{
+        height: auto;
+    }
+    .offer-item:last-child .offer-text {
+        top: 92px;
+    }
+    .countdown {
+        width: 68px;
+        height: 68px;
+    }
+    .count {
+        font-size: 20px;
+    } 
+    .count-type {
+        font-size: 14px;
+    }
+    .offer-item:last-child .offer-text h4 {
+        font-size: 18px;
+    }
+    .offer-item:last-child .offer-text h3 {
+        font-size: 38px;
+    }
+    .deal-otd-item{
+        flex: 0 0 70%;
+        max-width: 70%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    .toggle-nav{
+        width: 80%;
+        position: absolute;
+    }
+    .l-banner{
+        display: none;
+    }
+    .s-banner{
+        display: block;
+    }
+    .toggle-logo img {
+        width: 83%;
+    }
+    footer{
+        padding-bottom: 0;
+    }
+}
+@media only screen and (max-width:360px){
+    .flow-collection-item:nth-child(2) #watch-1{
+        width: 100%;
+    }
+    .new-style-item #suit-1{
+        width: 100%;
+    }
+    .nike-item button {
+        top: 104px;
+        left: 16px;
+        padding: 6px 24px;
+        font-size: 13px;
+    }
+    .section-heading h2 {
+        font-size: 23px;
+    }
+    .featured-nav ul li{
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+    .product-item{
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
+    .gallery-item:first-child, .gallery-item:last-child{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .offer-text {
+        top: 34px;
+        right: 9px;
+    }
+    .offer-text h4 {
+        font-size: 14px;
+    }
+    .offer-text h3 {
+        font-size: 19px;
+    }
+    .offer-text button {
+        font-size: 10px;
+        padding: 7px 15px 4px;
+    }
+    .offer-item:last-child .offer-text {
+        top: 45px;
+    }
+    .offer-item:last-child .offer-text h4 {
+        font-size: 18px;
+    }
+    .offer-item:last-child .offer-text h3 {
+        font-size: 38px;
+    }
+    .countdown-box {
+        width: 85%;
+    }
+    .countdown {
+        width: 60px;
+        height: 60px;
+    }
+    .count {
+        font-size: 18px;
+        line-height: 9px;
+    }
+    .count-type {
+        font-size: 13px;
+    }
+    .deal-otd-item{
+        flex: 0 0 90%;
+        max-width: 90%;
+        box-shadow: 1px 0px 9px -5px #000;
+    }
+    .deal-otd-item h3{
+        font-size: 16px;
+    }
+    .subscribe {
+        width: 95%;
+    }
+    .footer-item:last-child img {
+        margin-right: 26px;
+        width: 45px;
+        margin-top: 48px;
+    }
+    .logo{
+        flex: 0 0 62%;
+        max-width: 62%;
+    }
+    .toggle-btn {
+        padding-top: 0px;
+        transform: translateX(-15px);
+    }
+    .toggle-btn span{
+        background-color: #747474;
+    }
+    .toggle-nav ul li{
+        padding: 5px 10px;
+    }
+    .s-banner{
+        display: none;
+    }
+    .xs-banner{
+        display: block;
+    }
+    #style-insp-img{
+        display: none;
+    }
+    #style-insp-s-mobile{
+        display: block;
+    }
+}
+@media only screen and (max-width:320px){
+    .collection{
+        padding-top: 0;
+        padding-bottom: 25px;
+    }
+    .flow-collection-item h4 {
+        font-size: 18px;
+    }
+    .flow-collection-item h3 {
+        font-size: 42px;
+    }
+    .new-style-item{
+        margin-top: 50px;
+    }
+    #new-style-2 h4 {
+        font-size: 18px;
+    }
+    #new-style-2 h3 {
+        font-size: 42px;
+    }
+    .nike-item button {
+        top: 88px;
+        left: 15px;
+        padding: 7px 23px;
+        font-size: 12px;
+    }
+    .section-heading h2 {
+        font-size: 26px;
+    }
+    .product-item{
+        flex: 0 0 95%;
+        max-width: 95%;
+    }
+    .offer-text {
+        top: 30px;
+        right: 7px;
+    }
+    .offer-text h4 {
+        font-size: 13px;
+    }
+    .offer-text h3 {
+        font-size: 16px;
+    }
+    .offer-text button {
+        font-size: 9px;
+        padding: 6px 13px 3px;
+    }
+    .offer-item:last-child .offer-text h4 {
+        font-size: 16px;
+    }
+    .offer-item:last-child .offer-text h3 {
+        font-size: 32px;
+    }
+    .countdown-box{
+        margin-top: 15px;
+    }
+    .countdown {
+        width: 50px;
+        height: 50px;
+    }
+    .count {
+        font-size: 16px;
+        line-height: 4px;
+    }
+    .count-type {
+        font-size: 11px;
+    }
+    .deal-otd-item{
+        flex: 0 0 95%;
+        max-width: 95%;
+    }
+    .footer-item:last-child img{
+        width: 40px;
+    }
+}
