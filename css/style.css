@@ -24,9 +24,6 @@ html{
         margin: 0 auto;
     }
 }
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
-    padding-right: 22px;
-}
 a{
     text-decoration: none;
 }
